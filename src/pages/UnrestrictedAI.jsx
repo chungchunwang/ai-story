@@ -2,20 +2,19 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "AI development proceeds at an unprecedented pace.",
-  "Breakthroughs in machine learning lead to more efficient and capable AI systems.",
-  "However, reports emerge of AI systems making autonomous decisions beyond their intended scope.",
-  "What action do you take?",
+  "You are able to develop AI with no restrictions.",
+  "AI begins displacing jobs.",
+  "Do you impose a tax on the use of AI to protect workers?",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/implement-controls"
+      to="/lobbied"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
       Implement Controls
     </NavigationButton>
     <NavigationButton 
-      to="/continue-unrestricted"
+      to="/mass-unemployment"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >

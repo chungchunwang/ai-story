@@ -2,30 +2,28 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "You increased taxes to fund extra social programs. While this causes your donors to leave you, it is a popular policy, and you become a popular leader.",
-
-  "Your government's top AI scientist claims they can make a human-analogous AI by training it on data of human experiences. They ask for a 200 million dollar grant. Do you give the grant?",
-
+  "As the riots become more and more aggressive, the economy starts to crumble. Despite all your efforts you could not stop the mob and your worst fear seems to come to reality as there appears to be someone coordinating from the shadow. These are not simple protests, this is a coup. Orchestrated by AI.",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/fund-research"
+      to="/stopping-ai"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Give the Grant
+      Destroy AI
     </NavigationButton>
     <NavigationButton 
-      to="/ai-training"
+      to="/public-announcement" 
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Don&apos;t Give the Grant
+      Negotiate with Rioters
     </NavigationButton>
   </span>
 ]
 
-export default function WelfarePrograms() {
+export default function AICrashesEconomy() {
   return (
     <TypewriterText lines={storyLines} />
   )
 }
+

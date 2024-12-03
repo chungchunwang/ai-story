@@ -4,17 +4,15 @@ import RevealButton from '../components/shared/RevealButton'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "Robots powered by AI take over more and more jobs creating unseen levels of unemployment.",
-  "The economy has never been better as automation drives unprecedented growth.",
-  "Manual jobs are also in danger as robots become increasingly human-like.",
-  "Your advisors are split on how to handle this transition.",
-  "What path will you choose?",
+  "Robots powered by AI take over more and more jobs creating unseen levels of unemployment, but the economy has never been better.",
+  "Manual jobs are also in danger as they exponentially become more human-like.",
+  "What do you do?",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
-    <NavigationButton to="/mass-unemployment">
+    <NavigationButton to="/ai-concerns">
       Address Unemployment
     </NavigationButton>
     <NavigationButton to="/embrace-automation">
-      Embrace Progress
+      Nothing
     </NavigationButton>
   </span>
 ]

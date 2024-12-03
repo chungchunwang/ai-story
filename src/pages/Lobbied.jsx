@@ -2,26 +2,19 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "The government creates an AI that is analogous to humans. This is potentially very dangerous. Do you control the use of this technology?",
+  "You are lobbied by wealthy business owners, and will not keep your role unless you don't impose the tax.",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/robots-take-jobs"
+      to="/mass-unemployment"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Do Not Control AI Use
-    </NavigationButton>
-    <NavigationButton 
-      to="/ai-concerns"
-      delay={0.3}
-      style={{ marginTop: '2rem' }}
-    >
-      Control AI Use
+      Impose the Tax
     </NavigationButton>
   </span>
 ]
 
-export default function FundResearch() {
+export default function Lobbied() {
   return (
     <TypewriterText lines={storyLines} />
   )

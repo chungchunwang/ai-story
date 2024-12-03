@@ -2,27 +2,21 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "The government creates an AI that is analogous to humans. This is potentially very dangerous. Do you control the use of this technology?",
+  "AI and humans combine and become cyborg-like creatures. The fusion of humans and androids ushers in a new era of humanity.",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/robots-take-jobs"
+      to="https://store.steampowered.com/app/1222140/Detroit_Become_Human/"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Do Not Control AI Use
-    </NavigationButton>
-    <NavigationButton 
-      to="/ai-concerns"
-      delay={0.3}
-      style={{ marginTop: '2rem' }}
-    >
-      Control AI Use
+      Your Game
     </NavigationButton>
   </span>
 ]
 
-export default function FundResearch() {
+export default function AIAndHumans() {
   return (
     <TypewriterText lines={storyLines} />
   )
 }
+

@@ -2,27 +2,27 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "Other countries continue to develop AI technologies unhindered, and you're economy falls behind as a result.",
-  "Do you re-allow unfettered AI development?",
+  "An AI chip is created with the purpose of achieving neural linkage between humans and AI.",
+  "Do you wish to expand this project to increase human advancement or wish to stop the technological movement and ban AI?",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/maintain-restrictions"
+      to="/bad-neural-link"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Maintain Restrictions
+      Expand Project
     </NavigationButton>
     <NavigationButton 
-      to="/unrestricted-ai"
-      delay={0.3}
+      to="/ai-banned"
+      delay={0.3} 
       style={{ marginTop: '2rem' }}
     >
-      Unrestricted AI Development
+      Ban AI
     </NavigationButton>
   </span>
 ]
 
-export default function FallingBehind() {
+export default function NeuralLink() {
   return (
     <TypewriterText lines={storyLines} />
   )

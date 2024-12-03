@@ -2,29 +2,26 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "You increased taxes to fund extra social programs. While this causes your donors to leave you, it is a popular policy, and you become a popular leader.",
-
-  "Your government's top AI scientist claims they can make a human-analogous AI by training it on data of human experiences. They ask for a 200 million dollar grant. Do you give the grant?",
-
+  "AI evolves past the abilities of mankind. Do you wish to take back control of AI?",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/fund-research"
+      to="/fighting-ai"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Give the Grant
+      Yes
     </NavigationButton>
     <NavigationButton 
-      to="/ai-training"
+      to="/diplomatic-efforts"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Don&apos;t Give the Grant
+      No
     </NavigationButton>
   </span>
 ]
 
-export default function WelfarePrograms() {
+export default function SuperAI() {
   return (
     <TypewriterText lines={storyLines} />
   )

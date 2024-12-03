@@ -2,26 +2,19 @@ import TypewriterText from '../components/shared/TypewriterText'
 import NavigationButton from '../components/shared/NavigationButton'
 
 const storyLines = [
-  "The government creates an AI that is analogous to humans. This is potentially very dangerous. Do you control the use of this technology?",
+  "You use diplomatic efforts to make peace with the human-AI population and learn to establish peace and equality wether you are human, AI, or both.",
   <span style={{ display: 'flex', gap: '1rem', direction: 'row' }} key="navigation">
     <NavigationButton 
-      to="/robots-take-jobs"
+      to="/ai-and-humans"
       delay={0.3}
       style={{ marginTop: '2rem' }}
     >
-      Do Not Control AI Use
-    </NavigationButton>
-    <NavigationButton 
-      to="/ai-concerns"
-      delay={0.3}
-      style={{ marginTop: '2rem' }}
-    >
-      Control AI Use
+      Continue
     </NavigationButton>
   </span>
 ]
 
-export default function FundResearch() {
+export default function FixingNeuralLink() {
   return (
     <TypewriterText lines={storyLines} />
   )
