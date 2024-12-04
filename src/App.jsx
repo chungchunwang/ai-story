@@ -6,6 +6,7 @@ import StoryFlowChart from './components/StoryFlowChart';
 import NetworkBackground from './components/NetworkBackground';
 import PageTransition from './components/shared/PageTransition';
 import { saveProgress } from './utils/storyProgress';
+import useSound from 'use-sound';
 
 // Import all pages
 import Introduction from './pages/Introduction';
@@ -59,6 +60,11 @@ function App() {
   useEffect(() => {
     saveProgress(location.pathname);
   }, [location.pathname]);
+
+  const [play] = useSound('/audio/starfield.mp3', { loop: true, volume: 0.5 });
+  useEffect(() => {
+    play();
+  }, [play]);
 
   return (
     <div
