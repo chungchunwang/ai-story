@@ -8,7 +8,7 @@ const canvasStyles = {
   height: '100%',
   zIndex: -100,
   opacity: 0.8,
-  background-color: 'black'
+  backgroundColor: 'black',
 }
 
 const NetworkBackground = () => {
